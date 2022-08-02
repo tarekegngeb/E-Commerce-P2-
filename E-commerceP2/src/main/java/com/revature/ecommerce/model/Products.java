@@ -18,6 +18,7 @@ public class Products {
 	@Id
 	@GeneratedValue
 	private int p_id;
+	private double p_price;
 	private String prodName;
 	private String prodDesc;
 	private String prod_img;
