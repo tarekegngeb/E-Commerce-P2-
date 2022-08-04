@@ -18,25 +18,23 @@ import lombok.ToString;
 public class Users {
 	@Id
 	@GeneratedValue
-	private int user_id;
-	private String fName;
-	private String lName;
+	private int id;
 	private String email;
-	private String phoneNum;
-	private String userName;
 	private String password;
-	
-	public Users(String fName, String lName, String email, String phoneNum, String userName,
-			String password) {
+	private boolean enabled;
+
+
+	public Users(String email, String password, boolean enabled) {
 		super();
-		this.fName = fName;
-		this.lName = lName;
 		this.email = email;
-		this.phoneNum = phoneNum;
-		this.userName = userName;
 		this.password = password;
+		this.enabled = enabled;
 	}
 	
 	
 	
 }
+	
+	
+	
+
