@@ -1,8 +1,6 @@
 package com.revature.ecommerce.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,14 +8,13 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
-public class Orders {
-	@Id
-	@GeneratedValue
+public class CartItem {
+	
 	private int id;
-	
-	
+	private int quantity;
+	private double price;
 }
