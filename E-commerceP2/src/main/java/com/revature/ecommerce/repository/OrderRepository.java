@@ -1,10 +1,16 @@
 package com.revature.ecommerce.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
 import com.revature.ecommerce.model.Orders;
 
 public interface OrderRepository extends JpaRepository<Orders, Long>{
-
+	
+	
+	List<Orders>getOrdersByCustomerUserName(String username);
+	List<Orders>getAllOrders();
+	
 }
