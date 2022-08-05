@@ -1,6 +1,5 @@
 package com.revature.ecommerce.model;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,27 +14,9 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Users {
+public class Cart {
 	@Id
 	@GeneratedValue
 	private int id;
-	private String email;
-	private String password;
-	private String role;
-	private boolean enabled;
-
-
-	public Users(String email, String password, boolean enabled) {
-		super();
-		this.email = email;
-		this.password = password;
-		this.enabled = enabled;
-	}
-	
-	
-	
+	private int totalPrice;
 }
-	
-	
-	
-
